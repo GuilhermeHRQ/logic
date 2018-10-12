@@ -1,7 +1,6 @@
 let lines = ('4\nIntrodução ao carro\n1233\n56\nMudanças nas marchas\n999999\n129\nDerrapagens em alta velocidade\n888\n44\nEstilo a toda prova\n87653\n523').split('\n');
 
 const qtdVideos = lines.splice(0, 1);
-console.log(lines);
 let videos = [];
 
 for(let i = 0; i < qtdVideos; i++) {
