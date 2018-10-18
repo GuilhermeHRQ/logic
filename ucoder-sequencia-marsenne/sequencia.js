@@ -1,0 +1,1 @@
+const lines = ('2\n10\n4\n15\n-1\n').split('\n');
