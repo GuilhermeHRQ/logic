@@ -1,4 +1,13 @@
 console.time();
+/**
+ * TODO
+ * Retirar os números repetidos no inicio
+ * Criar um array para cada menina, usando o número da carta como indice do array
+ * preencher as posicoes com true
+ * caso aquela posição seja true, a menina possui a carta
+ */
+
+
 let lines = '1 1\n1000\n1000\n3 4\n1 3 5\n2 4 6 8\n10 9\n1 1 2 3 5 7 8 8 9 15\n2 2 2 3 4 6 10 11 11\n0 0\n'.split('\n');
 
 lines.splice(lines.length - 1, 1);
@@ -25,7 +34,7 @@ function retirarRepetidas(lista) {
     let aux = [];
 
     for(let i = 0; i < lista.length; i++) {
-        if(!aux.includes(lista[i])) {
+        if(!aux.indexOf(lista[i])) {
             aux.push(lista[i]);
         }
     }
@@ -37,7 +46,7 @@ function verificarPossiveisTrocas(m1, m2) {
     let total = 0;
 
     for(let i = 0; i < m1.length; i++) {
-        if(!m2.includes(m1[i])) {
+        if(!m2.indexOf(m1[i])) {
             total++;
         }
     }
