@@ -10,4 +10,4 @@ for(let i = a; i <= b; i++) {
     total += i;
 }
 
-console.log(total+'\n');
+console.log(total);
