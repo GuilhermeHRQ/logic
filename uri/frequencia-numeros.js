@@ -11,9 +11,6 @@ for(let i = 1; i <= qtdEntradas; i++) {
         numbers[lines[i]]++;
     }
 }
-
-console.log(numbers)
-
 let saida = [];
 for(let i in numbers) {
     saida.push({numero: i, qtd: numbers[i]});
